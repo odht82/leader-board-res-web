@@ -39,13 +39,15 @@ nav {
   align-items: center;
   justify-content: flex-end;
 }
-.navigation a {
+.navigation .web-tab {
   text-decoration: none;
   color: white;
   margin-right: 35px;
   font-size: 16px;
 }
-
+.navigation .mobile {
+  color: #562eff;
+}
 /* -------------------------------
     Container-one & Player Division 
 ------------------------------- */
@@ -298,3 +300,337 @@ footer {
   font-size: 20px;
   font-weight: 500;
 }
+
+/* -----------------
+   Media Queries
+----------------- */
+/* Desktop-----(min-width: 1024px)
+
+Tablet-----(min-width: 768px) and (max-width: 1023px)
+
+Mobile-----(max-width: 767px) 
+*/
+/* -----------------
+    Mobile Media 
+/* ------------------*/
+/*
+@media only screen and (max-width: 480px) {
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f1ff;
+  }
+  header {
+    width: 100vh;
+  }
+  nav {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #562eff;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-container {
+    display: flex;
+    width: 440px;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    height: 35px;
+    width: 85px;
+  }
+  .navigation {
+    display: flex;
+    height: 35px;
+    width: 85px;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navigation .mobile {
+    color: white;
+    margin-right: 20px;
+    font-size: 25px;
+  }
+  .navigation .web-tab {
+    display: none;
+  }
+
+  /* -------------------------------
+    Container-one & Player Division 
+------------------------------- */
+/*
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-one {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+  }
+  .player-section-title {
+    color: #562eff;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 27px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .player-division {
+    margin: 0px 20px 20px 20px;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .player {
+    background-color: #f3f1ff;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+  }
+  .player-image {
+    width: 40px;
+    height: 40px;
+  }
+  .player a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+*/
+/* ---------------------
+    Horizontal Line 
+--------------------- */
+/*
+  hr {
+    width: 439px;
+    border: 1px solid #d1d1d1;
+  }
+*/
+/* ---------------------
+    Blog Division 
+--------------------- */
+/*
+  .blog-section-title {
+    color: #562eff;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .blog-division {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  .blogs {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .blog {
+    width: 193px;
+    height: 188px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.25);
+  }
+  .blog-image {
+    width: 177px;
+    height: 85px;
+    margin: 8px;
+  }
+  .blog-info {
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .blog-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px 0px 5px 15px;
+    line-height: 25px;
+  }
+  .blog-info p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px 0px 0px 15px;
+    color: #562eff;
+  }
+  .blog-info span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #9f9f9f;
+  }
+*/
+/* -------------------------------
+    Container-two & course Division 
+  ------------------------------- */
+
+/*.container-two {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .course-section-title {
+    color: #562eff;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .course-division {
+    margin: 0px 20px 20px 20px;
+  }
+  .courses {
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+  }
+  .course {
+    background-color: #ffffff;
+    height: 270;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .course-thumb {
+    height: 104px;
+    width: 224px;
+    margin: 15px 15px 0px 15px;
+  }
+  .course-info {
+    margin: 15px 15px 15px 15px;
+  }
+  .course-title {
+    margin: 0px 0px 15px 0px;
+    font-size: 19px;
+    font-weight: 600;
+  }
+  .course-author {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ed6b4f;
+    text-decoration: none;
+    margin-top: 25px;
+  }
+  .course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .course-details .ratings {
+    margin: 0;
+    font-size: 14px;
+  }
+  .course-duration {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    background-color: #ffe4e8;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff4a60;
+  }
+  .allow {
+    color: #ffc014;
+  }
+  .deny {
+    color: #aeaeae94;
+  }
+  footer {
+    display: flex;
+    background-color: #562eff;
+    width: 100%;
+    height: 94px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+  }
+*/
+/* -------------------------------
+    Container-three & Subscrive Division 
+------------------------------- */
+/*  
+.container-three {
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .subscription {
+    margin: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+  }
+  .subscription .title {
+    color: #562eff;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .input {
+    display: flex;
+  }
+  .email-field {
+    text-align: center;
+    width: 300px;
+    height: 45px;
+    border: 3px solid #562eff;
+    border-radius: 100px;
+    outline: none;
+  }
+  .email-field::placeholder {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    color: #542eff73;
+  }
+  .email-field:focus {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+  }
+  .submit-btn {
+    width: 100px;
+    height: 45px;
+    margin-left: 20px;
+    background-color: #562eff;
+    border-radius: 100px;
+    border: 3px solid #562eff;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+  }
+} 
+*/
